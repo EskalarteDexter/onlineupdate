@@ -2,27 +2,12 @@
    "files": [   
 
 {
-         "name": "SG-Mediatek-Gigastories",
+         "name": "SG-Mediatek-Gigastories1",
          "url": "https://raw.githubusercontent.com/EskalarteDexter/onlineupdate/main/DEX-Stories-TCP.ovpn"
       },
-
      {
-         "name": "SG-ทรู-เรียนฟรี-True-Free",
-         "url": "https://raw.githubusercontent.com/khvpn/netkh/master/SGAMAZON-VIP.ovpn"
-      },
-
-      {
-         "name": "SG-ทรู-เรียนฟรี-True",
-         "url": "https://appapk.host/update-app/config/SG-TrueSocial-DigitalOcean-VIP.ovpn"
-      },
-     {
-         "name": "SG-DtacSocial-Digital-VIP",
-         "url": "https://appapk.host/update-app/config/SG-DtacSocial-DigitalOcean-VIP.ovpn"
-      },
-
-      {
-         "name": "SG-TrueSocial-Digital-VIP",
-         "url": "https://appapk.host/update-app/config/SG-TrueSocial-DigitalOcean-VIP.ovpn"
+         "name": "SG-Mediatek-Gigastories2",
+         "url": "https://raw.githubusercontent.com/EskalarteDexter/onlineupdate/main/DexTcp.ovpn"       
       }
 
      
