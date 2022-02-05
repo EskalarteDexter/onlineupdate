@@ -3,18 +3,33 @@
 
 {
          "name": "SG-Mediatek-Gigastories1",
-         "url": "https://raw.githubusercontent.com/EskalarteDexter/onlineupdate/main/DEX-Stories-TCP.ovpn"
+         "url": "https://raw.githubusercontent.com/EskalarteDexter/onlineupdate/main/mediatekconfig1.ovpn"
       },
      {
          "name": "SG-Mediatek-Gigastories2",
-         "url": "https://raw.githubusercontent.com/EskalarteDexter/onlineupdate/main/DexTcp.ovpn"       
+         "url": "https://raw.githubusercontent.com/EskalarteDexter/onlineupdate/main/mediatekconfig2.ovpn"       
       }
 
      
       
 
    ],
-"message":" Found New Version 1.0.1 \n💗 ยินดีต้อนรับสู่ SuperVPN Internet \n📢 รายละเอียดการอัพเดตในครังนี้ \n⏰ อัพเดตเมื่อเวลา​ [02.00]วันที่​ 2/01/2022 \n🔔 แก้ไข​ DNS​ กรุณาอัพเดตไฟล์ใหม่ด้วย​ \n🇹🇭 เชิร์ฟไทยส่วนใหญ่ใช้กับการเล่นเกมโชเชียล/ละแอปอืนๆ​ \n🇸🇬 เชิร์ฟนอกจะใช้งานดูหนัง​โหลดวีดีโอที่แน้นใช้งานเบนวินเยอะๆ​ แนะนำ​ \n​🙏 เราพร้อมดูแลลูกค้าตลอต 24h จันทร์​-อาทิตย์​ (ไม่เว้นวันหยุด)​",
+"message":" Welcome to MTK Websocket
+
+Whats new ?
+
+💖NEW PAYLOAD💖
+
+💥 Auto Update app
+💥FIX ALL SERVER
+💥Anti sniffeR
+
+🚫🚫WARNING🚫🚫
+❌ No torrent
+❌ No carding
+❌ No ddos
+
+Powered by: Dexter Eskalarte",
    "title":"New config update available" ,
    "version": 2.0
 }
