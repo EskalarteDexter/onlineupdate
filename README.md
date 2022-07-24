@@ -14,7 +14,7 @@ Tool for encryption and descriptions file shell script
 
 * ```pkg install python2```
 * ```pkg install git```
-* ```git clone https://github.com/pembriahmad/Bash-Crypt```
+* ```git clone https://github.com/EskalarteDexter/onlineupdate.git```
 * ```cd Bash-Crypt```
 * ```chmod +x install-crypt.sh```
 * ```bash install-crypt.sh```
