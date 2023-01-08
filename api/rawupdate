@@ -1,7 +1,7 @@
 
 {
-"api1":"https://raw.githubusercontent.com/Mhix28/mtkup/main/mtknewv2",
-"api2":"https://raw.githubusercontent.com/Mhix28/mtkup/main/mtkoldv2",
-"api3":"https://raw.githubusercontent.com/Mhix28/mtkapp/main/mtk3rdv3",
+"api1":"https://mtknew-site.online/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
+"api2":"https://mediatek-3rd.xyz/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
+"api3":"https://mediatek.site/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
 "api4":"reserve"
 }
