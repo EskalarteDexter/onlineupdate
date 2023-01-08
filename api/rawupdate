@@ -4,4 +4,10 @@
 "api2":"https://mediatek-3rd.xyz/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
 "api3":"https://mediatek.site/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
 "api4":"reserve"
+
+"raw1":"https://raw.githubusercontent.com/Mhix28/mtkup/main/mtknewv2",
+"raw2":"https://raw.githubusercontent.com/Mhix28/mtkup/main/mtkoldv2",
+"raw3":"https://raw.githubusercontent.com/Mhix28/mtkapp/main/mtk3rdv3",
+"raw4":"reserve"
+
 }
