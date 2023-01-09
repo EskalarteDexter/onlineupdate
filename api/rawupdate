@@ -1,8 +1,8 @@
 
 {
-"api1":"https://mtknew-site.online/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
-"api2":"https://mediatek-3rd.xyz/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
-"api3":"https://mediatek.site/api/auth.php?username=%s&password=%s&device_id=%s&device_model=%s",
+"api1":"",
+"api2":"",
+"api3":"",
 "api4":"reserve"
 
 "raw1":"https://raw.githubusercontent.com/Mhix28/mtkup/main/mtknewv2",
