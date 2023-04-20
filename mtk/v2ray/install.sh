@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 #====================================================
 #	System Request:Debian 9+/Ubuntu 18.04+/Centos 7+
-#	Author:	Dexter Eskalarte
+#	Author:	wulabing
 #	Dscription: Xray onekey Management
-#	email: admin@dextereskalarte.com
+#	email: admin@wulabing.com
 #====================================================
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -298,8 +298,7 @@ function update_sh() {
     [yY][eE][sS] | [yY])
       wget -N --no-check-certificate https://raw.githubusercontent.com/EskalarteDexter/Autoscript/main/dragonz/install.sh
       print_ok "update completed"
-      print_ok "This script was made by: Dexter Eskalarte"
-      print_ok "This script is not for sale"
+      print_ok "You can execute this program through bash $0"
       exit 0
       ;;
     *) ;;
@@ -611,16 +610,18 @@ function ws_link() {
   DOMAIN=$(cat ${domain_tmp_dir}/domain)
   echo -e ""
   echo -e ""
-  print_ok "Dexter Eskalarte link config (VLESS + TCP + TLS)"
+  print_ok "URL Link (VLESS + TCP + TLS)"
   print_ok "vless://$UUID@$DOMAIN:$PORT?security=tls#TLS_wulabing-$DOMAIN"
   echo -e ""
   echo -e ""
-  print_ok "Dexter Eskalarte link config (VLESS + TCP + XTLS)"
+  print_ok "URL Link (VLESS + TCP + XTLS)"
   print_ok "vless://$UUID@$DOMAIN:$PORT?security=xtls&flow=$FLOW#XTLS_wulabing-$DOMAIN"
   echo -e ""
   echo -e ""
-  print_ok "Dexter Eskalarte link config (VLESS + WebSocket + TLS)"
+  print_ok "URL Link (VLESS + WebSocket + TLS)"
   print_ok "vless://$UUID@$DOMAIN:$PORT?type=ws&security=tls&path=%2f${WS_PATH_WITHOUT_SLASH}%2f#WS_TLS_wulabing-$DOMAIN"
+  echo -e ""
+  echo -e ""
 }
 
 function basic_information() {
@@ -709,12 +710,33 @@ $RESET"
   echo -e ""
   echo -e "—————————————— Installation Guide ——————————————"
   echo -e ""
-  echo -e "${Green}0.${Font}  upgrade script"
+  echo -e "${Green}0.${Font}  Upgrade Script"
   echo -e "${Green}1.${Font}  Install Xray (VLESS + TCP + XTLS / TLS + Nginx)"
   echo -e "${Green}2.${Font}  Install Xray (VLESS + TCP + XTLS / TLS + Nginx and VLESS + TCP + TLS + Nginx + WebSocket)"
   echo -e ""
+  echo -e "—————————————— Configuration Changes ————————————"
   echo -e ""
-  read -rp "Select Number (Default 2): " menu_num
+  echo -e "${Green}3.${Font} Change UUID"
+  echo -e "${Green}4.${Font} Change connection port"
+  echo -e "${Green}5.${Font} Change WebSocket PATH"
+  echo -e ""
+  echo -e "————————————— View information ————————————"
+  echo -e ""
+  echo -e "${Green}6.${Font} View real-time access log"
+  echo -e "${Green}7.${Font} View real-time error log"
+  echo -e "${Green}8.${Font} View Xray configuration link"
+  echo -e ""
+  echo -e "—————————————— Other options ————————————"
+  echo -e ""
+  echo -e "${Green}9.${Font}  Install 4-in-1 BBR, sharp speed installation script"
+  echo -e "${Green}10.${Font} Install MTproxy (not recommended, please close or uninstall relevant users)"
+  echo -e "${Green}11.${Font} Uninstall Xray"
+  echo -e "${Green}12.${Font} Update Xray-core"
+  echo -e "${Green}13.${Font} Install Xray-core Beta (Pre)"
+  echo -e "${Green}14.${Font} Manually renew SSL certificate"
+  echo -e "${Green}15.${Font} Exit"
+  echo -e ""
+  read -rp "Please enter the number (Default 2)：" menu_num
   case $menu_num in
   0)
     update_sh
@@ -725,7 +747,7 @@ $RESET"
   2)
     install_xray_ws
     ;;
-  11)
+  3)
     read -rp "please enter UUID:" UUID
     if [[ ${shell_mode} == "tcp" ]]; then
       modify_UUID
@@ -735,11 +757,11 @@ $RESET"
     fi
     restart_all
     ;;
-  13)
+  4)
     modify_port
     restart_all
     ;;
-  14)
+  5)
     if [[ ${shell_mode} == "ws" ]]; then
       read -rp "Please enter the path (example：/dexterpogi/ Requires both sides to contain /):" WS_PATH
       modify_fallback_ws
@@ -749,13 +771,13 @@ $RESET"
       print_error "The current mode is not Websocket mode"
     fi
     ;;
-  21)
+  6)
     tail -f $xray_access_log
     ;;
-  22)
+  7)
     tail -f $xray_error_log
     ;;
-  23)
+  8)
     if [[ -f $xray_conf_dir/config.json ]]; then
       if [[ ${shell_mode} == "tcp" ]]; then
         basic_information
@@ -766,29 +788,29 @@ $RESET"
       print_error "xray configuration file does not exist"
     fi
     ;;
-  31)
+  9)
     bbr_boost_sh
     ;;
-  32)
+  10)
     mtproxy_sh
     ;;
-  33)
+  11)
     source '/etc/os-release'
     xray_uninstall
     ;;
-  34)
+  12)
     bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" - install
     restart_all
     ;;
-  35)
+  13)
     bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" - install --beta
     restart_all
     ;;
-  36)
+  14)
     "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh"
     restart_all
     ;;
-  40)
+  15)
     exit 0
     ;;
   *)
