@@ -2,9 +2,9 @@
 
 #====================================================
 #	System Request:Debian 9+/Ubuntu 18.04+/Centos 7+
-#	Author:	wulabing
+#	Author:	Dexter Eskalarte
 #	Dscription: Xray onekey Management
-#	email: admin@wulabing.com
+#	email: admin@dextereskalarte.com
 #====================================================
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -710,31 +710,31 @@ $RESET"
   echo -e ""
   echo -e "—————————————— Installation Guide ——————————————"
   echo -e ""
-  echo -e "${Green}0.${Font}  upgrade script"
+  echo -e "${Green}0.${Font}  Upgrade Script"
   echo -e "${Green}1.${Font}  Install Xray (VLESS + TCP + XTLS / TLS + Nginx)"
   echo -e "${Green}2.${Font}  Install Xray (VLESS + TCP + XTLS / TLS + Nginx and VLESS + TCP + TLS + Nginx + WebSocket)"
   echo -e ""
   echo -e "—————————————— Configuration Changes ————————————"
   echo -e ""
-  echo -e "${Green}3.${Font} change UUID"
-  echo -e "${Green}4.${Font} change connection port"
-  echo -e "${Green}5.${Font} change WebSocket PATH"
+  echo -e "${Green}3.${Font} Change UUID"
+  echo -e "${Green}4.${Font} Change connection port"
+  echo -e "${Green}5.${Font} Change WebSocket PATH"
   echo -e ""
   echo -e "————————————— View information ————————————"
   echo -e ""
-  echo -e "${Green}6.${Font} view real-time access log"
-  echo -e "${Green}7.${Font} view real-time error log"
-  echo -e "${Green}8.${Font} view Xray configuration link"
+  echo -e "${Green}6.${Font} View real-time access log"
+  echo -e "${Green}7.${Font} View real-time error log"
+  echo -e "${Green}8.${Font} View Xray configuration link"
   echo -e ""
   echo -e "—————————————— Other options ————————————"
   echo -e ""
-  echo -e "${Green}9.${Font} install 4-in-1 BBR, sharp speed installation script"
-  echo -e "${Yellow}10.${Font} Install MTproxy (not recommended, please close or uninstall relevant users)"
-  echo -e "${Green}11.${Font} uninstall Xray"
-  echo -e "${Green}12.${Font} update Xray-core"
+  echo -e "${Green}9.${Font}  Install 4-in-1 BBR, sharp speed installation script"
+  echo -e "${Green}10.${Font} Install MTproxy (not recommended, please close or uninstall relevant users)"
+  echo -e "${Green}11.${Font} Uninstall Xray"
+  echo -e "${Green}12.${Font} Update Xray-core"
   echo -e "${Green}13.${Font} Install Xray-core Beta (Pre)"
-  echo -e "${Green}14.${Font} manually renew SSL certificate"
-  echo -e "${Green}15.${Font} exit"
+  echo -e "${Green}14.${Font} Manually renew SSL certificate"
+  echo -e "${Green}15.${Font} Exit"
   echo -e ""
   read -rp "Please enter the number (Default 2)：" menu_num
   case $menu_num in
